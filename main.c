@@ -1,6 +1,14 @@
-#include "shell.h"
+/* main.c */
 
-void prompt(void)
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
 {
-    write(STDOUT_FILENO, "#cisfun$ ", sizeof("#cisfun$ ") - 1);
+    printf("Hello, Betty!\n");
+    return (0);
 }
