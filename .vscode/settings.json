@@ -1,0 +1,6 @@
+{
+	"files.associations": {
+		"t_shell.h": "c",
+		"stdio.h": "c"
+	}
+}

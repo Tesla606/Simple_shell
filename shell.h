@@ -2,12 +2,16 @@
 #define SHELL_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <sys/wait.h>
 
-/**
- * Display a prompt when shell is execute
-*/
-void prompt(void);
+#define MAX_PATH_LENGTH 1024
 
+void display_prompt(void);
+char *read_command();
+void execute_command(char *cmd);
 
-#endif /* SHELL_H */
+#endif
